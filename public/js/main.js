@@ -144,9 +144,3 @@ var swiper = new Swiper(".mySwiperBinge", {
     el: '.swiper-pagination-binge',
   },
 });
-
-const toggleBtn = document.querySelector('.menuBtn')
-
-toggleBtn.addEventListener('click', () => {
-  document.getElementById('mobileMenu').classList.toggle('max-h-96')
-})

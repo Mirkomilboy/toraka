@@ -35,6 +35,16 @@
   background-color: #474747;
 }
 
+html.dark .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+}
+
+
+html.dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #2B5DDF;
+}
+
 .swiper-pagination-bullet-active {
   background-color: #2B5DDF;
 }
