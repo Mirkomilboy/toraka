@@ -1,9 +1,14 @@
 var swiper = new Swiper(".mySwiperhero", {
-  slidesPerView: 'auto',
+  slidesPerView: 1.2,
   slidesPerGroup: 1,
   centeredSlides: true,
   spaceBetween: 20,
   loop: true,
+  breakpoints: {
+    640: {
+      slidesPerView: 'auto',
+    }
+  },
   autoplay: {
     delay: 4000,
   },
