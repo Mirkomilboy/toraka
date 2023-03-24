@@ -1,51 +1,75 @@
 var swiper = new Swiper(".mySwiperhero", {
-  slidesPerView: 3,
+  slidesPerView: 'auto',
   slidesPerGroup: 1,
   centeredSlides: true,
+  spaceBetween: 20,
   loop: true,
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 6,
-      spaceBetween: 24,
-    },
+  autoplay: {
+    delay: 4000,
   },
 });
 
 
 var swiper = new Swiper(".mySwiperfeature", {
-  slidesPerView: 1,
+  slidesPerView: 2.2,
   spaceBetween: 18,
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 4,
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 4,
     },
+    1280: {
+      slidesPerView: 5,
+    }
   },
   navigation: {
     nextEl: ".swiper-button-nextfeature",
     prevEl: ".swiper-button-prevfeature",
   },
+   // If we need pagination
+  pagination: {
+    el: '.swiper-pagination-feature',
+  },
 });
 
 var swiper = new Swiper(".mySwipernew", {
-  slidesPerView: 1,
+  slidesPerView: 2.2,
   spaceBetween: 18,
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+    1280: {
+      slidesPerView: 5,
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-nextnew",
+    prevEl: ".swiper-button-prevnew",
+  },
+   // If we need pagination
+  pagination: {
+    el: '.swiper-pagination-new',
+  },
+});
+
+var swiper = new Swiper(".mySwiperupdate", {
+  slidesPerView: 2.2,
+  spaceBetween: 22,
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 4,
@@ -53,24 +77,7 @@ var swiper = new Swiper(".mySwipernew", {
     1024: {
       slidesPerView: 5,
     },
-  },
-  navigation: {
-    nextEl: ".swiper-button-nextnew",
-    prevEl: ".swiper-button-prevnew",
-  },
-});
-
-var swiper = new Swiper(".mySwiperupdate", {
-  slidesPerView: 1,
-  spaceBetween: 22,
-  breakpoints: {
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 4,
-    },
-    1024: {
+    1280: {
       slidesPerView: 7,
     },
   },
@@ -78,19 +85,26 @@ var swiper = new Swiper(".mySwiperupdate", {
     nextEl: ".swiper-button-nextupdate",
     prevEl: ".swiper-button-prevupdate",
   },
+   // If we need pagination
+  pagination: {
+    el: '.swiper-pagination-latest',
+  },
 });
 
 var swiper = new Swiper(".mySwiperlike", {
-  slidesPerView: 1,
+  slidesPerView: 2.2,
   spaceBetween: 22,
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 4,
     },
     1024: {
+      slidesPerView: 5,
+    },
+    1280: {
       slidesPerView: 7,
     },
   },
@@ -98,24 +112,41 @@ var swiper = new Swiper(".mySwiperlike", {
     nextEl: ".swiper-button-nextlike",
     prevEl: ".swiper-button-prevlike",
   },
+   // If we need pagination
+  pagination: {
+    el: '.swiper-pagination-like',
+  },
 });
 
-var swiper = new Swiper(".mySwiperlike2", {
-  slidesPerView: 1,
+var swiper = new Swiper(".mySwiperBinge", {
+  slidesPerView: 2.2,
   spaceBetween: 22,
   breakpoints: {
     640: {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     768: {
       slidesPerView: 4,
     },
     1024: {
+      slidesPerView: 5,
+    },
+    1280: {
       slidesPerView: 7,
     },
   },
   navigation: {
-    nextEl: ".swiper-button-nextlike2",
-    prevEl: ".swiper-button-prevlike2",
+    nextEl: ".swiper-button-nextBinge",
+    prevEl: ".swiper-button-prevBinge",
+  },
+   // If we need pagination
+  pagination: {
+    el: '.swiper-pagination-binge',
   },
 });
+
+const toggleBtn = document.querySelector('.menuBtn')
+
+toggleBtn.addEventListener('click', () => {
+  document.getElementById('mobileMenu').classList.toggle('max-h-96')
+})

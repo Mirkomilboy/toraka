@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -60,7 +60,7 @@
         </button>
 
         <!-- Notifications -->
-        <button id="notifications" data-dropdown-toggle="notification-dropdown" type="button">
+        <button class="hidden md:block" id="notifications" data-dropdown-toggle="notification-dropdown" type="button">
           <div>
             <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -71,13 +71,13 @@
 
           <!-- Dropdown menu -->
           <div id="notification-dropdown"
-            class="z-10 hidden bg-white dark:bg-[#121212] w-full sm:w-96 sm:rounded-md border border-gray-400 dark:border-gray-600 !top-[69px] sm:!top-0 shadow-2xl">
+            class="z-10 hidden bg-white dark:bg-[#121212] w-96 rounded-md border border-gray-400 dark:border-gray-600">
             <div aria-labelledby="notifications">
               <h2
-                class="font-bold text-sm text-start text-black dark:text-white bg-black/20 dark:bg-[#1E1E1E] sm:rounded-t-md py-5 px-7">
+                class="font-bold text-sm text-start text-black dark:text-white bg-black/20 dark:bg-[#1E1E1E] rounded-t-md py-5 px-7">
                 Notifications
               </h2>
-              <div class="text-black dark:text-white text-start bg-white dark:bg-[#121212] sm:rounded-b-md px-3.5">
+              <div class="text-black dark:text-white text-start bg-white dark:bg-[#121212] rounded-b-md px-3.5">
                 <a href="#"
                   class="group flex items-center border-b border-black/20 dark:border-white/20 gap-3 py-3 px-2.5">
                   <div
@@ -126,10 +126,8 @@
         <!-- user -->
         <button type="button" id="user" data-dropdown-toggle="user-dropdown" class="w-9 h-9">
           <img class="w-full h-full object-cover rounded-full cursor-pointer" src="./image/user.png" alt="">
-
-          <div id="user-dropdown"
-            class="w-full sm:w-80 text-black dark:text-white hidden z-20 !top-[59px] sm:!top-0 shadow-2xl">
-            <div aria-labelledby="user" class="bg-white dark:bg-[#4A4A4A] sm:rounded-md py-3.5 px-8">
+          <div id="user-dropdown" class="w-80 text-black dark:text-white hidden z-20">
+            <div aria-labelledby="user" class="bg-white dark:bg-[#4A4A4A] rounded-md py-3.5 px-8">
               <div class="flex items-center space-x-4">
                 <div class="w-10 h-10 rounded-full">
                   <img class="w-full h-full object-cover rounded-full cursor-pointer" src="./image/feature.png" alt="">
@@ -194,35 +192,47 @@
             </div>
           </div>
         </button>
+
+        <!-- hamburger btn -->
+        <button class="menuBtn md:hidden">
+          <svg width="25" height="17" viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 6.96373L0 6.94983V9.72977H25V6.96373ZM0 13.8997H16.6667V16.6796H0V13.8997ZM16.6667 0H0V2.79383L16.6667 2.77993V0Z"
+              fill="white" />
+          </svg>
+        </button>
       </div>
     </nav>
 
     <!-- mobile menu -->
-    <div class="md:hidden flex items-center font-medium text-xs text-white border-t border-white/50 space-x-10 px-5">
-      <a href="#" class="flex items-center space-x-1 py-5">
-        <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M10.7151 14.3188H6.90467V9.43763C6.90467 9.26532 6.95759 9.1287 7.06344 9.02778C7.16928 8.92685 7.3059 8.87639 7.47329 8.87639H10.1539C10.3262 8.87639 10.4628 8.92685 10.5638 9.02778C10.6647 9.1287 10.7151 9.26532 10.7151 9.43763V14.3188ZM2.30402 13.8758C2.30402 14.3927 2.45048 14.794 2.74341 15.0795C3.03633 15.365 3.44372 15.5078 3.96557 15.5078H13.6764C14.1933 15.5078 14.5983 15.365 14.8912 15.0795C15.1841 14.794 15.3305 14.3927 15.3305 13.8758V8.02711L9.26038 2.9391C8.96502 2.68802 8.66962 2.68802 8.3742 2.9391L2.30402 8.02711V13.8758ZM0 7.28867C0 7.44129 0.0566157 7.57791 0.169847 7.69855C0.283079 7.81913 0.438157 7.87943 0.635082 7.87943C0.738466 7.87943 0.833236 7.85483 0.919391 7.80562C1.00555 7.75637 1.08801 7.7022 1.16678 7.64312L8.55887 1.44001C8.64255 1.36616 8.72992 1.32924 8.82096 1.32924C8.91206 1.32924 8.99945 1.36616 9.08313 1.44001L16.4752 7.64312C16.549 7.7022 16.6291 7.75637 16.7152 7.80562C16.8014 7.85483 16.8961 7.87943 16.9995 7.87943C17.1718 7.87943 17.3195 7.82896 17.4426 7.72804C17.5656 7.62711 17.6272 7.48804 17.6272 7.31082C17.6272 7.10405 17.5509 6.93667 17.3983 6.80867L9.71084 0.347079C9.43514 0.115693 9.13851 0 8.82096 0C8.50346 0 8.20686 0.115693 7.93115 0.347079L0.236309 6.80867C0.0787698 6.93667 0 7.09667 0 7.28867ZM13.4771 3.95819L15.3305 5.52374V2.11202C15.3305 1.94955 15.2826 1.82032 15.1866 1.72432C15.0906 1.62832 14.9614 1.58032 14.7989 1.58032H14.0087C13.8512 1.58032 13.7232 1.62832 13.6247 1.72432C13.5263 1.82032 13.4771 1.94955 13.4771 2.11202V3.95819Z"
-            fill="currentColor" />
-        </svg>
-        <span>Home</span>
-      </a>
-      <a href="#" class="flex items-center opacity-60 space-x-1 py-5">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M8.66667 6V0H16V6H8.66667ZM0 8.66667V0H7.33333V8.66667H0ZM8.66667 16V7.33333H16V16H8.66667ZM0 16V10H7.33333V16H0Z"
-            fill="currentColor" />
-        </svg>
-        <span>Dashboard</span>
-      </a>
-      <a href="#" class="flex items-center opacity-60 space-x-1 py-5">
-        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M14 0H2C0.894688 0 0 0.969245 0 2.16667V10.8333C0 12.0311 0.894375 13 2 13H14C15.1056 13 16 12.0311 16 10.8333V2.16667C16 0.969245 15.1062 0 14 0ZM5 10.2917H2.5C2.22281 10.2917 2 10.0513 2 9.75V9.20833C2 8.90703 2.22281 8.66667 2.5 8.66667H5V10.2917ZM9 9.75C9 10.0505 8.77734 10.2917 8.5 10.2917H6V8.66667H8.5C8.77734 8.66667 9 8.90788 9 9.20833V9.75ZM14 5.41667C14 6.01318 13.5506 6.5 13 6.5H3C2.44937 6.5 2 6.0125 2 5.41667V3.25C2 2.65349 2.44937 2.16667 3 2.16667H13C13.5506 2.16667 14 2.65349 14 3.25V5.41667Z"
-            fill="currentColor" />
-        </svg>
-        <span>Discover</span>
-      </a>
+    <div id="mobileMenu"
+      class="absolute max-h-0 overflow-hidden z-50 top-[60px] left-0 w-full text-white bg-brand-blue transition-all ease-in-out duration-300 px-5">
+      <div class="font-medium text-xs">
+        <a href="#" class="flex items-center space-x-1 py-5">
+          <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.7151 14.3188H6.90467V9.43763C6.90467 9.26532 6.95759 9.1287 7.06344 9.02778C7.16928 8.92685 7.3059 8.87639 7.47329 8.87639H10.1539C10.3262 8.87639 10.4628 8.92685 10.5638 9.02778C10.6647 9.1287 10.7151 9.26532 10.7151 9.43763V14.3188ZM2.30402 13.8758C2.30402 14.3927 2.45048 14.794 2.74341 15.0795C3.03633 15.365 3.44372 15.5078 3.96557 15.5078H13.6764C14.1933 15.5078 14.5983 15.365 14.8912 15.0795C15.1841 14.794 15.3305 14.3927 15.3305 13.8758V8.02711L9.26038 2.9391C8.96502 2.68802 8.66962 2.68802 8.3742 2.9391L2.30402 8.02711V13.8758ZM0 7.28867C0 7.44129 0.0566157 7.57791 0.169847 7.69855C0.283079 7.81913 0.438157 7.87943 0.635082 7.87943C0.738466 7.87943 0.833236 7.85483 0.919391 7.80562C1.00555 7.75637 1.08801 7.7022 1.16678 7.64312L8.55887 1.44001C8.64255 1.36616 8.72992 1.32924 8.82096 1.32924C8.91206 1.32924 8.99945 1.36616 9.08313 1.44001L16.4752 7.64312C16.549 7.7022 16.6291 7.75637 16.7152 7.80562C16.8014 7.85483 16.8961 7.87943 16.9995 7.87943C17.1718 7.87943 17.3195 7.82896 17.4426 7.72804C17.5656 7.62711 17.6272 7.48804 17.6272 7.31082C17.6272 7.10405 17.5509 6.93667 17.3983 6.80867L9.71084 0.347079C9.43514 0.115693 9.13851 0 8.82096 0C8.50346 0 8.20686 0.115693 7.93115 0.347079L0.236309 6.80867C0.0787698 6.93667 0 7.09667 0 7.28867ZM13.4771 3.95819L15.3305 5.52374V2.11202C15.3305 1.94955 15.2826 1.82032 15.1866 1.72432C15.0906 1.62832 14.9614 1.58032 14.7989 1.58032H14.0087C13.8512 1.58032 13.7232 1.62832 13.6247 1.72432C13.5263 1.82032 13.4771 1.94955 13.4771 2.11202V3.95819Z"
+              fill="currentColor" />
+          </svg>
+          <span>Home</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 py-5">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.66667 6V0H16V6H8.66667ZM0 8.66667V0H7.33333V8.66667H0ZM8.66667 16V7.33333H16V16H8.66667ZM0 16V10H7.33333V16H0Z"
+              fill="currentColor" />
+          </svg>
+          <span>Dashboard</span>
+        </a>
+        <a href="#" class="flex items-center space-x-1 py-5">
+          <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 0H2C0.894688 0 0 0.969245 0 2.16667V10.8333C0 12.0311 0.894375 13 2 13H14C15.1056 13 16 12.0311 16 10.8333V2.16667C16 0.969245 15.1062 0 14 0ZM5 10.2917H2.5C2.22281 10.2917 2 10.0513 2 9.75V9.20833C2 8.90703 2.22281 8.66667 2.5 8.66667H5V10.2917ZM9 9.75C9 10.0505 8.77734 10.2917 8.5 10.2917H6V8.66667H8.5C8.77734 8.66667 9 8.90788 9 9.20833V9.75ZM14 5.41667C14 6.01318 13.5506 6.5 13 6.5H3C2.44937 6.5 2 6.0125 2 5.41667V3.25C2 2.65349 2.44937 2.16667 3 2.16667H13C13.5506 2.16667 14 2.65349 14 3.25V5.41667Z"
+              fill="currentColor" />
+          </svg>
+          <span>Discover</span>
+        </a>
+      </div>
     </div>
   </header>
 
@@ -231,96 +241,6 @@
     <div class="overflow-x-hidden">
       <div class="swiper mySwiperhero main mt-14">
         <div class="swiper-wrapper text-sm text-white py-10">
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
-              </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
-              </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
-              </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
-              </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
-              </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
-            </div>
-          </div>
           <div class="swiper-slide">
             <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
               <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
