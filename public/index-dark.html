@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="darka">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -10,6 +10,42 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>Toraka</title>
+  <style>
+    .mySwiperhero .swiper-slide {
+      width: 300px;
+      transition: all .3s ease-in-out;
+    }
+
+    .mySwiperhero .swiper-slide.swiper-slide-active {
+      width: 450px;
+      transform: scaleY(1.1);
+      transition: all .3s ease-in-out;
+    }
+
+    .mySwiperhero .swiper-slide.swiper-slide-active .heading {
+      font-size: 12px;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      .mySwiperhero .swiper-slide {
+        width: 250px;
+      }
+
+      .mySwiperhero .swiper-slide.swiper-slide-active {
+        width: 400px;
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .mySwiperhero .swiper-slide {
+        width: 220px;
+      }
+
+      .mySwiperhero .swiper-slide.swiper-slide-active {
+        width: 320px;
+      }
+    }
+  </style>
 </head>
 
 <body class="dark:bg-[#111111] dark:text-white">
@@ -232,530 +268,528 @@
 
   <main>
     <!-- hero swiper -->
-    <div class="overflow-x-hidden">
-      <div class="swiper mySwiperhero w-full lg:mt-14">
-        <div class="swiper-wrapper text-sm text-white py-6 md:py-10">
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+    <div class="swiper mySwiperhero w-full lg:mt-14">
+      <div class="swiper-wrapper text-sm text-white py-6 md:py-10">
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
-              <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
-              <div class="absolute bottom-3.5 left-3.5 z-10">
-                <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
-                <div class="toggle-text hidden flex items-center space-x-1 pb-3">
-                  <span class="font-medium text-10">9.8</span>
-                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
-                      fill="#E5A800" />
-                  </svg>
-                </div>
-                <p class="heading">The Game That I Came From</p>
+        </div>
+        <div class="swiper-slide">
+          <div class="relative h-52 md:h-60 lg:h-72 rounded-lg overflow-hidden">
+            <img class="w-full h-full object-cover" src="./image/swiper-1.png" alt="">
+            <div class="absolute bottom-3.5 left-3.5 z-10">
+              <h5 class="toggle-text hidden font-medium pb-0.5">Solo Leveling</h5>
+              <div class="toggle-text hidden flex items-center space-x-1 pb-3">
+                <span class="font-medium text-10">9.8</span>
+                <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.88625 0.289884L2.82355 2.44457L0.445916 2.7912C0.0195366 2.85304 -0.151341 3.3787 0.157866 3.67976L1.87803 5.35599L1.47118 7.72386C1.39795 8.15187 1.84874 8.47247 2.2263 8.2723L4.35331 7.15427L6.48033 8.2723C6.85788 8.47084 7.30868 8.15187 7.23544 7.72386L6.82859 5.35599L8.54876 3.67976C8.85796 3.3787 8.68709 2.85304 8.26071 2.7912L5.88307 2.44457L4.82038 0.289884C4.62997 -0.0941831 4.07828 -0.0990653 3.88625 0.289884Z"
+                    fill="#E5A800" />
+                </svg>
               </div>
-              <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
+              <p class="heading">The Game That I Came From</p>
             </div>
+            <div class="absolute inset-0 w-full h-full bg-linearG z-0"></div>
           </div>
         </div>
       </div>
@@ -2070,6 +2104,25 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/flowbite.min.js"></script>
   <script src="./js/main.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiperhero", {
+      slidesPerView: 1.2,
+      centeredSlides: true,
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      roundLengths: true,
+      slidesPerGroupAuto: true,
+      loop: true,
+      breakpoints: {
+        640: {
+          slidesPerView: 'auto',
+        }
+      },
+      autoplay: {
+        delay: 4000,
+      },
+    });
+  </script>
 </body>
 
 </html>

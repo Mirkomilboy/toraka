@@ -12,37 +12,27 @@
   <title>Toraka</title>
   <style>
     .mySwiperhero .swiper-slide {
-      width: 300px;
-      transition: all .3s ease-in-out;
+      z-index: 1;
     }
 
     .mySwiperhero .swiper-slide.swiper-slide-active {
-      width: 450px;
-      transform: scaleY(1.1);
+      transform: scale(1.5, 1.2);
+      z-index: 20;
       transition: all .3s ease-in-out;
+      border-radius: 12px;
     }
 
     .mySwiperhero .swiper-slide.swiper-slide-active .heading {
-      font-size: 12px;
+      font-size: 10px;
     }
 
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 640px) {
       .mySwiperhero .swiper-slide {
-        width: 250px;
+        transform: scale(0.9);
       }
 
       .mySwiperhero .swiper-slide.swiper-slide-active {
-        width: 400px;
-      }
-    }
-
-    @media only screen and (max-width: 768px) {
-      .mySwiperhero .swiper-slide {
-        width: 220px;
-      }
-
-      .mySwiperhero .swiper-slide.swiper-slide-active {
-        width: 320px;
+        transform: scale(1.2, 1);
       }
     }
   </style>
@@ -2106,16 +2096,29 @@
   <script src="./js/main.js"></script>
   <script>
     var swiper = new Swiper(".mySwiperhero", {
-      slidesPerView: 1.2,
+      slidesPerView: 1.4,
       centeredSlides: true,
       spaceBetween: 20,
       slidesPerGroup: 1,
-      roundLengths: true,
-      slidesPerGroupAuto: true,
       loop: true,
       breakpoints: {
         640: {
-          slidesPerView: 'auto',
+          slidesPerView: 3,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 4.5,
+        },
+        1280: {
+          slidesPerView: 5,
+        },
+        1536: {
+          slidesPerView: 5.5,
+        },
+        1920: {
+          slidesPerView: 6,
         }
       },
       autoplay: {

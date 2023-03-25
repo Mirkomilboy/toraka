@@ -14,26 +14,6 @@ document.querySelector('.overlayUs').addEventListener('click', () => {
   document.querySelector('.overlayUs').classList.toggle('hidden')
 })
 
-
-var swiper = new Swiper(".mySwiperhero", {
-  slidesPerView: 1.2,
-  centeredSlides: true,
-  spaceBetween: 20,
-  slidesPerGroup: 1,
-  roundLengths: true,
-  slidesPerGroupAuto: true,
-  loop: true,
-  breakpoints: {
-    640: {
-      slidesPerView: 'auto',
-    }
-  },
-  autoplay: {
-    delay: 4000,
-  },
-});
-
-
 var swiper = new Swiper(".mySwiperfeature", {
   slidesPerView: 2.2,
   spaceBetween: 18,
