@@ -1,8 +1,27 @@
+document.getElementById('notifications').addEventListener('click', () => {
+  document.querySelector('.overlayNo').classList.toggle('hidden')
+})
+
+document.querySelector('.overlayNo').addEventListener('click', () => {
+  document.querySelector('.overlayNo').classList.toggle('hidden')
+})
+
+document.getElementById('user').addEventListener('click', () => {
+  document.querySelector('.overlayUs').classList.toggle('hidden')
+})
+
+document.querySelector('.overlayUs').addEventListener('click', () => {
+  document.querySelector('.overlayUs').classList.toggle('hidden')
+})
+
+
 var swiper = new Swiper(".mySwiperhero", {
   slidesPerView: 1.2,
-  slidesPerGroup: 1,
   centeredSlides: true,
   spaceBetween: 20,
+  slidesPerGroup: 1,
+  roundLengths: true,
+  slidesPerGroupAuto: true,
   loop: true,
   breakpoints: {
     640: {
